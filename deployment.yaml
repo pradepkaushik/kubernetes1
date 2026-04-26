@@ -3,19 +3,19 @@ kind: Deployment
 metadata:
   name: kubernetes1-deployment
   labels:
-    app: kubernetes1
+    app: kubernetes1-label
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: kubernetes1
+      app: kubernetes1-selector
   template:
     metadata:
       labels:
         app: kubernetes1
     spec:
       containers:
-      - name: kubernetes1
+      - name: kubernetes1-container
         image: drblaxk/toothiii-website:latest
         ports:
-        - containerPort: 80
+        - containerPort: 99
