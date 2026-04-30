@@ -18,4 +18,4 @@ spec:
       - name: kubernetes1-container
         image: drblaxk/toothiii-website:latest
         ports:
-        - containerPort: 99
+        - containerPort: 80
