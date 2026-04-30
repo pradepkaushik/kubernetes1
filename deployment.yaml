@@ -5,7 +5,7 @@ metadata:
   labels:
     app: kubernetes1-label
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: kubernetes1-label
